@@ -6,7 +6,7 @@ const { EventEmitter } = require('events')
 const once = require('lodash/fp/once')
 const url = require('url')
 const WebSocket = require('ws')
-const Server = require('../../lib')
+const Server = require('../..')
 const sinon = require('sinon')
 
 describe('Server', function() {

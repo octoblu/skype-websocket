@@ -695,9 +695,9 @@ meshblu-connector-runner@^12.0.1:
   optionalDependencies:
     bunyan "^1.8.10"
 
-meshblu-connector-skype@^5.2.0:
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/meshblu-connector-skype/-/meshblu-connector-skype-5.2.0.tgz#e9ac75560b3b509fd29132d70bb8ce60ec9a213b"
+meshblu-connector-skype@^5.2.1:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/meshblu-connector-skype/-/meshblu-connector-skype-5.2.1.tgz#edfe67de1d2fa5d8ec78f0d222b2db671ca59581"
   dependencies:
     async "^2.5.0"
     coffee-script "^1.12.7"
