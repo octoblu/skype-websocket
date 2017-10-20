@@ -6,7 +6,7 @@
   "author": "Sqrt of Saturn <sqrt@octoblu.com>",
   "license": "MIT",
   "scripts": {
-    "start": "meshblu-connector",
+    "start": "node ./command.js",
     "test": "mocha"
   },
   "dependencies": {
