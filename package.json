@@ -1,10 +1,13 @@
 {
   "name": "skype-websocket",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "repository": "git@github.com:octoblu/skype-websocket.git",
   "author": "Sqrt of Saturn <sqrt@octoblu.com>",
   "license": "MIT",
+  "bin": {
+    "skype-websocket": "./command.js"
+  },
   "scripts": {
     "start": "node ./command.js",
     "test": "mocha"
