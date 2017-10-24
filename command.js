@@ -65,7 +65,7 @@ class Command {
   }
 
   startSkype(callback) {
-    this.server.onMessage({autoLaunchSkype: true})
+    this.server.autoLaunchSkype()
     callback()
   }
 
