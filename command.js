@@ -42,7 +42,7 @@ class Command {
 
   restart() {
     debug('restart')
-    async.series([this.stop, delay(5000), this.start], (error) => {
+    async.series([this.stop, delay(5000), this.start, delay(5000), this.startSkype], (error) => {
       debug('restarted', error)
       if (error) return this.restart()
     })
@@ -62,6 +62,11 @@ class Command {
     this.server = new Server(this.serverOptions)
     this.server.once('error', this.restart)
     this.server.start(callback)
+  }
+
+  startSkype(callback) {
+    this.server.onMessage({autoLaunchSkype: true})
+    callback()
   }
 
   stop(callback) {
