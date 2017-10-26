@@ -14,7 +14,7 @@ function copy(source, dest, callback) {
 }
 
 function copyAssets(callback) {
-  const source = path.resolve("./assets")
+  const source = path.resolve("./node_modules/meshblu-connector-skype/assets")
   const dest = path.resolve(`./deploy/${process.env.MESHBLU_CONNECTOR_TARGET}/bin/assets`)
 
   copy(source, dest, callback)
