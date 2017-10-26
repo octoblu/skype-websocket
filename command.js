@@ -9,7 +9,7 @@ const OctoDash = require('octodash')
 const WebSocket = require('ws')
 const debug = require('debug')('skype-websocket:command')
 const packageJSON = require('./package.json')
-const Server = require('./lib/server')
+const Server = require('./src/server')
 
 const CLI_OPTIONS = [
   {
