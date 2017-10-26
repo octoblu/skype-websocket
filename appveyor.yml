@@ -1,5 +1,5 @@
 environment:
-  DEBUG: meshblu-connector-*,octodash
+  DEBUG: meshblu-connector-*
   nodejs_version: 8.1.0
   MESHBLU_CONNECTOR_UPLOADER_GITHUB_TOKEN:
     secure: CJ8qK8VcRaGDJMfJc4htvN2aWjWV4yuhjxnKfo/9UR2AqbGJneHIopWj25AVgP2u
@@ -8,8 +8,6 @@ environment:
 platform:
   - x64
   - x86
-cache:
- - "%LOCALAPPDATA%\\Yarn"
 shallow_clone: true
 skip_non_tags: true
 install:
@@ -33,3 +31,5 @@ after_test:
   - meshblu-connector-installer-windows-msi
   - meshblu-connector-installer-windows-msi --user-install
   - meshblu-connector-uploader-github
+  - ps: mkdir ./deploy/assets
+  - if "%PLATFORM%" == "x64" meshblu-connector-uploader-github --installers-path ./deploy/assets
