@@ -13,6 +13,9 @@ class FakeSkype {
     console.error("Bad news: You're using the fake. #blamejade")
     console.log('onMessage', JSON.stringify(message, null, 2))
   }
+  on () {
+    console.error("Bad news: You're using the fake. #blamejade")
+  }
 }
 
 module.exports = FakeSkype

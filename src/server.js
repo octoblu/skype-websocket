@@ -17,7 +17,7 @@ class Server extends EventEmitter {
 
     this.skype = skype
     if(!skype) this.skype = this.getNewSkype()
-    skype.on('update', this.onConfigFromSkype)
+    this.skype.on('update', this.onConfigFromSkype)
     this.options = { hostname, port }
     this.server = http.createServer()
     this.wss = new WebSocket.Server({ server: this.server })
