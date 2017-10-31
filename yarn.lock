@@ -700,8 +700,8 @@ meshblu-connector-runner@^12.0.1:
     bunyan "^1.8.10"
 
 meshblu-connector-skype@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/meshblu-connector-skype/-/meshblu-connector-skype-6.0.0.tgz#b6b5a2e337b4d5a14844c075bcd03b599e7c4f1f"
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/meshblu-connector-skype/-/meshblu-connector-skype-6.0.1.tgz#1efd7822d9d46f9fd195cd042a3bb1d993a38d1a"
   dependencies:
     async "^2.5.0"
     coffee-script "^1.12.7"
@@ -1022,8 +1022,8 @@ sinon@^4.0.1:
     type-detect "^4.0.0"
 
 sntp@2.x.x:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/sntp/-/sntp-2.0.2.tgz#5064110f0af85f7cfdb7d6b67a40028ce52b4b2b"
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/sntp/-/sntp-2.1.0.tgz#2c6cec14fedc2222739caf9b5c3d85d1cc5a2cc8"
   dependencies:
     hoek "4.x.x"
 
