@@ -1,6 +1,6 @@
 environment:
   DEBUG: meshblu-connector-*
-  nodejs_version: 6.11.5
+  nodejs_version: 8
   MESHBLU_CONNECTOR_UPLOADER_GITHUB_TOKEN:
     secure: CJ8qK8VcRaGDJMfJc4htvN2aWjWV4yuhjxnKfo/9UR2AqbGJneHIopWj25AVgP2u
   MESHBLU_CONNECTOR_CERT_PASSWORD:
