@@ -1,6 +1,6 @@
 {
   "name": "skype-websocket",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "main": "index.js",
   "repository": "git@github.com:octoblu/skype-websocket.git",
   "author": "Sqrt of Saturn <sqrt@octoblu.com>",
