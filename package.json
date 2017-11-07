@@ -1,6 +1,6 @@
 {
   "name": "skype-websocket",
-  "version": "1.0.24",
+  "version": "1.0.25",
   "main": "index.js",
   "repository": "git@github.com:octoblu/skype-websocket.git",
   "author": "Sqrt of Saturn <sqrt@octoblu.com>",
@@ -19,7 +19,7 @@
     "debug": "^3.1.0",
     "lodash": "^4.17.4",
     "meshblu-connector-cli": "^1.1.7",
-    "meshblu-connector-skype": "^6.0.2",
+    "meshblu-connector-skype": "^6.1.0",
     "server-destroy": "^1.0.1",
     "ws": "^3.2.0"
   },
@@ -28,10 +28,5 @@
     "mocha": "^4.0.1",
     "sinon": "^4.0.1",
     "sinon-chai": "^2.14.0"
-  },
-  "pkg": {
-    "assets": [
-      "node_modules/meshblu-connector-skype/assets"
-    ]
   }
 }
