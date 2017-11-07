@@ -8,7 +8,6 @@ const partial          = require('lodash/fp/partial')
 const debug            = require('debug')('skype-websocket:server')
 const enableDestroy    = require('server-destroy')
 const WebSocket        = require('ws')
-const Skype            = require('meshblu-connector-skype')
 
 class Server extends EventEmitter {
   constructor({ hostname = 'localhost', port = 0, skype } = {}) {
@@ -65,6 +64,7 @@ class Server extends EventEmitter {
   }
 
   getNewSkype () {
+    const Skype = require('meshblu-connector-skype')
     return new Skype()
   }
 
