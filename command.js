@@ -36,6 +36,7 @@ class Command {
   constructor({ argv, cliOptions = CLI_OPTIONS } = {}) {
     bindAll(Object.getOwnPropertyNames(Command.prototype), this)
 
+    process.env.MESHBLU_CONNECTOR_CWD = process.cwd()
     const octoDash = new OctoDash({ argv, cliOptions, name: packageJSON.name, version: packageJSON.version })
     this.serverOptions = pick(['hostname', 'port'], octoDash.parseOptions())
   }
