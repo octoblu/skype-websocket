@@ -32,13 +32,21 @@ class Server extends EventEmitter {
   }
 
   onMessageFromWebsocket(message) {
+    debug('websocket message received', JSON.stringify(message,null,2))
     this.skype.onConfig(message)
   }
 
   onConfigFromSkype(config) {
     this.wss.clients.forEach((client) => {
       if (client.readyState !== WebSocket.OPEN) return
-      client.send(JSON.stringify({ metadata: {type:"update"}, data: config }))
+      const message = {
+        metadata: {
+          type: "update"
+        },
+        data: config
+      }
+      debug('sending websocket message', JSON.stringify(message,null,2))
+      client.send(JSON.stringify(message))
     })
   }
 
