@@ -33,7 +33,7 @@ class Server extends EventEmitter {
 
   onMessageFromWebsocket(message) {
     debug('websocket message received', JSON.stringify(message,null,2))
-    this.skype.onConfig(message)
+    this.skype.onMessage(message)
   }
 
   onConfigFromSkype(config) {
