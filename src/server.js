@@ -21,7 +21,7 @@ class Server extends EventEmitter {
     this.server = http.createServer()
     this.wss = new WebSocket.Server({ server: this.server })
     this.wss.on('connection', (client) => {
-      client.on('message', (rawMessage) => this.onMessage(JSON.parse(rawMessage)))
+      client.on('message', (rawMessage) => this.onMessageFromWebsocket(JSON.parse(rawMessage)))
     })
   }
 
